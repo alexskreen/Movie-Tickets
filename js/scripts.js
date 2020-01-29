@@ -65,45 +65,45 @@ $(document).ready(function () {
         var price = 0
 
 // AGES CALCULATIONS
-        if (ages === "6") {
+        if (ages === "65+") {
             price = price -= 4
         }
-        if (ages === "8"){
+        if (ages === "13 and younger"){
             price = price +=0
         }
-        if (ages === "10"){
+        if (ages === "13 to 17"){
             price = price +=4
         }
-        if (ages === "12"){
+        if (ages === "18 to 64"){
             price = price +=8
         }
 // // TIMES CALCULATIONS
-        if (times === "6") {
+        if (times === "10:00 am") {
             price = price -= 4
         }
-        if (times === "8"){
+        if (times === "1:00 pm"){
             price = price +=0
         }
-        if (times === "10"){
+        if (times === "4:00 pm"){
             price = price +=4
         }
-        if (times === "12"){
+        if (times === "7:00 pm"){
             price = price +=8
         }
 // // TIMES CALCULATIONS
-        if (movies === "6") {
+        if (movies === "Seal Team: Epicodus") {
             price = price - 4
         }
-        if (movies === "8"){
+        if (movies === "Code and Coder 2"){
             price = price +0
         }
-        if (movies === "10"){
+        if (movies === "CodeHard 2: Code Hard with a Vengeance"){
             price = price +4
         }
-        if (movies === "12"){
+        if (movies === "2Fast 2Furious: Tokyo Code"){
             price = price +8
         }
-        // console.log(price);
+        console.log(price);
         var newTicket = new Ticket(movies, times, ages, price)
         ticketBook.addTicket(newTicket);
         console.log(ticketBook.tickets)
